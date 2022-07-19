@@ -8,6 +8,7 @@
     overflow: hidden;
     width: 90vw;
     height: 100vh;
+    font-size: 15px;
 }
 #nav-bar{
   background-color:#35424a ;
@@ -42,13 +43,13 @@
 }
 #users .logo{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     color: rgb(32, 55, 125);
     margin: 80px;
 }
 #users .logo h1{
     margin-bottom: 55px;
-    font-size:70px;
+    font-size:3.5em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #a1f5ee;
 }
@@ -63,7 +64,7 @@
     border-radius: 15px;
 }
 #users .admin h1, .user h1{
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -79,7 +80,7 @@
     width: 70px;
     height: 30px;
     border: none;
-    font-size: 1em;
+    font-size: 12px;
     border-radius: 5px;
     margin-left: 100px;
 }
