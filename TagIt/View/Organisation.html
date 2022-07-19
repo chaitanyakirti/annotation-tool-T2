@@ -12,7 +12,14 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
   <style>
-    header::before {
+    /* body {
+      background: url('../Images/aaron-burden-xG8IQMqMITM-unsplash.jpg') no-repeat center center/cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      opacity: 0.7;
+    } */
+    /* body::before{
       background: url('../Images/aaron-burden-xG8IQMqMITM-unsplash.jpg') no-repeat center center/cover;
       content: "";
       position: absolute;
@@ -22,45 +29,96 @@
       height: 100%;
       z-index: -1;
       opacity: 0.7;
+    } */
+
+    header::before {
+      background: url('../Images/aaron-burden-xG8IQMqMITM-unsplash.jpg');
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.7;
+      background-size: 100% 100%;
+    }
+
+    #containerOrganisation {
+      margin: 12px;
+      flex-wrap: wrap;
     }
 
     .item {
       width: 12rem;
       height: 12rem;
       background: url("../Images/pexels-pixabay-207692.jpg");
-      background-size:cover;
-      /* background-color: tomato; */
-      /* border: 2px solid green; */
+      background-size: cover;
       border-radius: 12px;
       margin: auto;
+      margin-top: 2rem;
       padding: 3px;
       opacity: 0.9;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 7px 5px 10px 4px rgb(29, 44, 29);
+      box-shadow: 10px 4px 6px 6px rgb(29, 44, 29);
 
     }
-    .item:hover{
-       transform: scale(1.2);
+
+    .item:hover {
+      transform: scale(1.2);
     }
-    .itemtext{
+
+    .itemtext {
       display: flex;
       background-color: #ffffff;
-      
+
       border: 12% solid black;
       opacity: 0.7;
       align-content: center;
       justify-content: center;
     }
-    .itemtext p{
+
+    .itemtext p {
       text-align: center;
       font-weight: bolder;
       opacity: 1;
     }
-    .itemtext:hover{
+
+    .itemtext:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .btn:hover {
       transform: scale(1.2);
     }
+
+    .nav-item:hover {
+      transform: scale(1.2);
+    }
+
+    /* #addnew{
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+
+    } */
+    /* @media only screen and (max-width: 650px) {
+      #containerOrganisation {
+        flex-direction: column-reverse;
+
+      }
+
+      .item {
+        margin: auto;
+        margin-top: 20px;
+      }
+    } */
   </style>
 </head>
 
@@ -93,7 +151,7 @@
     </nav>
   </header>
   <h1 style="display: flex; justify-content: center; padding: 3%; font-family: cursive;" ;><u>Organisations</u></h1>
-  <div class="d-flex mb-3" style="justify-content: center">
+  <div class="d-flex mb-3" style="justify-content: center" id="containerOrganisation">
     <div class="p-2 item">
       <div class="itemtext">
         <p>Organisation 1</p>
@@ -109,6 +167,9 @@
         <p>Organisation 3</p>
       </div>
     </div>
+  </div>
+  <div class="text-center">
+    <button type="button" class="btn btn-primary " style="margin-top:4rem;">Add New +</button>
   </div>
 
 
