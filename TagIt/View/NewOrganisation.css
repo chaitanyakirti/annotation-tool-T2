@@ -10,6 +10,10 @@
     background-attachment: fixed;
   }
   /* align items center vertically and horizontally  */
+  .nav-item:hover {
+    transform: scale(1.2);
+  }
+
   .container{
     display: flex;
     justify-content: center;
