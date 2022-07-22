@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/theavinashjha/TagIt-1.0#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
   }
 }
